@@ -44,12 +44,12 @@ const config: PlaywrightTestConfig = {
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'https://demoapp.ordino.ai/login',
-    /* Collect trace only for failed tests - Options: 'on', 'off', 'retain-on-failure', 'on-first-retry' */
-    trace: 'retain-on-failure',
-    /* Capture screenshot only on failure */
-    screenshot: 'only-on-failure',
-    /* Report video on failure */
-    video: 'retain-on-failure',
+    /* Collect trace for all tests - Options: 'on', 'off', 'retain-on-failure', 'on-first-retry' */
+    trace: 'on',
+    /* Capture screenshot for all tests - Options: 'on', 'off', 'only-on-failure' */
+    screenshot: 'on',
+    /* Report video for all tests - Options: 'on', 'off', 'retain-on-failure', 'on-first-retry' */
+    video: 'on',
     extraHTTPHeaders: {
       'Accept': 'application/json',
     },
